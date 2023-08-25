@@ -39,5 +39,5 @@ def Image_Features(data: Item):
     num_bins = 9
 
     hog = cv2.HOGDescriptor(win_size, block_size, block_stride, cell_size, num_bins) 
-     hog_descriptor = hog.compute(img_new) 
+    hog_descriptor = hog.compute(img_new) 
     return {"vector": hog_descriptor.tolist()}
